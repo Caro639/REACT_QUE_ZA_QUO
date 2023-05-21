@@ -97,7 +97,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -184,7 +184,7 @@
       rgba(var(--callout-rgb), 0.5)
     );
     background-clip: padding-box;
-    backdrop-filter: blur(24px);
+    /* backdrop-filter: blur(24px); */
   }
 
   .description div {
@@ -209,21 +209,36 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
+/* @media (prefers-color-scheme: dark) { */
+.vercelLogo {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
   }
 
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  to {
+    margin-left: 0;
+    width: 100%;
   }
 }
 
-@keyframes rotate {
+.logo {
+  animation: 5s infinite alternate slidein;
+}
+
+@keyframes slidein {
   from {
-    transform: rotate(360deg);
+    margin-left: 100%;
+    width: 300%;
   }
+
   to {
-    transform: rotate(0deg);
+    margin-left: 0;
+    width: 100%;
   }
 }
