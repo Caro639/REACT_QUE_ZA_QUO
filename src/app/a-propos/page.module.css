@@ -1,0 +1,57 @@
+/* page a propos */
+.titre {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.p {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.logowhite {
+  width: auto;
+}
+
+/* barre de recherche */
+.Barre {
+  display: flex;
+  flex-direction: row;
+  border: white 2px solid;
+  border-radius: 40px 40px 40px 40px;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Article[type="number"] {
+  flex: 6;
+}
+
+.submit[type="submit"] {
+  flex: 1;
+}
+
+.Barre {
+  margin-top: 40px;
+  max-width: 70%;
+}
+
+.Article {
+  position: relative;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 40px 0 0 40px;
+  font-size: 16px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.submit {
+  max-width: 100px;
+  min-width: 50px;
+  border-radius: 0 40px 40px 0;
+  background-color: #e30613;
+  color: white;
+}
